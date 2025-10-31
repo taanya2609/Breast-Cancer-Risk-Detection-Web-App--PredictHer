@@ -21,6 +21,7 @@ Then install dependencies:
 
 pip install flask opencv-python scikit-learn numpy pandas joblib
 
+**Download dataset- https://data.mendeley.com/datasets/ywsbh3ndr8/2**
 
 **Project Structure**
 Keep files organized as:
