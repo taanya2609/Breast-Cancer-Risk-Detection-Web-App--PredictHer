@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection - PredictHer</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>PredictHer: Breast Cancer Detection</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/detection">Detection</a></li>
+                <li><a href="/treatment">Treatment</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detection">
+        <h2>Upload a Mammogram for Analysis</h2>
+        <form action="/detection" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        {% if result %}
+        <h3>Result: <span class="{{ 'malignant' if result == 'Malignant' else 'benign' }}">{{ result }}</span></h3>
+        <img src="{{ image_url }}" alt="Uploaded Image">
+        {% endif %}
+    </section>
+</body>
+</html>

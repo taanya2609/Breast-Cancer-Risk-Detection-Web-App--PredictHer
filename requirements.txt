@@ -1,0 +1,13 @@
+Python==3.9.0
+Flask==3.1.0
+matplotlib==3.9.4
+matplotlib-inline==0.1.7
+keras==3.9.2
+numpy==2.0.2
+opencv-python==4.11.0.86
+pandas==2.2.3
+pillow==11.1.0
+pip==20.2.3
+scikit-learn==1.6.
+scipy==1.13.1
+Werkzeug==3.1.3
